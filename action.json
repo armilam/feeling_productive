@@ -1,0 +1,18 @@
+{
+  "versionLabel": "1.0.0",
+  "agentInfo": {
+    "languageCode": "en-US",
+    "projectId": "feeling-productive",
+    "voiceName": "male_1"
+  },
+  "actions": [
+    {
+      "initialTrigger": {
+        "intent": "assistant.intent.action.MAIN"
+      },
+      "httpExecution": {
+        "url": "https://feeling-productive.herokuapp.com/google_assistant"
+      }
+    }
+  ]
+}
