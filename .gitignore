@@ -24,3 +24,5 @@
 .DS_Store
 logfile/public/packs
 /node_modules
+logfile
+creds.data
