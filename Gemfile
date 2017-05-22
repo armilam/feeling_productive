@@ -9,6 +9,10 @@ gem "rails", "~> 5.1.1"
 gem "pg"
 gem "puma", "~> 3.7"
 
+gem "turbolinks", "~> 5.0.0"
+gem "webpacker"
+gem "uglifier"
+
 gem "google_assistant", "~> 1.0.0.beta"
 
 group :development do
