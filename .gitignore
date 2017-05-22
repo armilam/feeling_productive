@@ -22,4 +22,5 @@
 
 .byebug_history
 .DS_Store
-logfile
+logfile/public/packs
+/node_modules
