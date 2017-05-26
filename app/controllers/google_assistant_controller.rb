@@ -1,4 +1,5 @@
 class GoogleAssistantController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def conversation
     assistant_response = GoogleAssistant.respond_to(params, response) do |assistant|

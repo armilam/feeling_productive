@@ -11,7 +11,7 @@
         "intent": "assistant.intent.action.MAIN"
       },
       "httpExecution": {
-        "url": "http://www.feelingproductive.com/google_assistant"
+        "url": "https://feeling-productive.herokuapp.com/google_assistant"
       }
     }
   ]
