@@ -13,6 +13,8 @@ gem "turbolinks", "~> 5.0.0"
 gem "webpacker"
 gem "uglifier"
 
+gem "clearance", "~> 1.16"
+
 gem "google_assistant", "~> 1.0.0.beta"
 
 group :development do
