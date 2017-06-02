@@ -1,18 +1,31 @@
 {
-  "versionLabel": "1.0.0",
-  "agentInfo": {
-    "languageCode": "en-US",
-    "projectId": "feeling-productive",
+  "manifest": {
+    "displayName": "Feeling Productive",
+    "invocationName": "i'm feeling productive",
+    "shortDescription": "A to-do app for when you're feeling productive",
+    "longDescription": "Feeling Productive gives you a place to keep your long-term to-do list. It then helps you decide what you should do when are you feeling productive.",
+    "sampleInvocation": [
+      "i'm feeling productive"
+    ],
     "voiceName": "male_1"
   },
   "actions": [
     {
-      "initialTrigger": {
-        "intent": "assistant.intent.action.MAIN"
+      "description": "The main intent.",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "feeling_productive"
       },
-      "httpExecution": {
-        "url": "https://feeling-productive.herokuapp.com/google_assistant"
+      "intent": {
+        "name": "actions.intent.MAIN"
       }
     }
-  ]
+  ],
+  "conversations": {
+    "feeling_productive": {
+      "name": "feeling_productive",
+      "url": "https://feeling-productive.herokuapp.com/google_assistant",
+      "fulfillmentApiVersion": 2
+    }
+  }
 }
