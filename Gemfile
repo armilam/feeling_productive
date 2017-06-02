@@ -13,9 +13,11 @@ gem "turbolinks", "~> 5.0.0"
 gem "webpacker"
 gem "uglifier"
 
+# Authentication
 gem "clearance", "~> 1.16"
+gem "doorkeeper", "~> 4.2"
 
-gem "google_assistant", "~> 1.0.0.beta"
+gem "google_assistant", github: "armilam/google-assistant-ruby", branch: "assistant-api-v2"
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
