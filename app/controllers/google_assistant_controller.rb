@@ -8,6 +8,9 @@ class GoogleAssistantController < ApplicationController
       end
     end
 
+    puts "RESPONSE:"
+    puts assistant_response
+
     render json: assistant_response
   end
 end
